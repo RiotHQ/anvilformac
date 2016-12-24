@@ -759,7 +759,7 @@
 				ORGANIZATIONNAME = Riot;
 				TargetAttributes = {
 					4FBFA35515C6F85800BA8209 = {
-						DevelopmentTeam = 9HNHHQLWA5;
+						DevelopmentTeam = 54RHB5W6RN;
 					};
 				};
 			};
@@ -984,6 +984,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = 54RHB5W6RN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1007,6 +1008,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = 54RHB5W6RN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

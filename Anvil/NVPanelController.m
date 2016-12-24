@@ -293,10 +293,10 @@ static NSString *const kPowPath = @"/Library/LaunchDaemons/cx.pow.firewall.plist
     BOOL a, b;
     
     if (state) {
-        a = [self runTask:@"/bin/launchctl load /Library/LaunchDaemons/cx.pow.firewall.plist" asRoot:YES];
+        a = [self runTask:@"/bin/launchctl load /Library/LaunchDaemons/cx.pow.firewall.plist" asRoot:NO];
         b = [self runTask:[NSString stringWithFormat:@"/bin/launchctl load %@/Library/LaunchAgents/cx.pow.powd.plist", NSHomeDirectory()] asRoot:NO];
     } else {
-        a = [self runTask:@"/bin/launchctl unload /Library/LaunchDaemons/cx.pow.firewall.plist" asRoot:YES];
+        a = [self runTask:@"/bin/launchctl unload /Library/LaunchDaemons/cx.pow.firewall.plist" asRoot:NO];
         b = [self runTask:[NSString stringWithFormat:@"/bin/launchctl unload %@/Library/LaunchAgents/cx.pow.powd.plist", NSHomeDirectory()] asRoot:NO];
     }
     success = a & b;
